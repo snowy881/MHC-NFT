@@ -14,14 +14,14 @@ interface CurrencyType {
 }
 
 const CurrencyContext = createContext<CurrencyType>({
-  currency: "SOL",
+  currency: "MHCNFT",
   setCurrency: () => {},
   getCurrencySettings: () => {},
   currencyOptions: [
     {
-      currencySymbol: "SOL",
-      treasuryMint: "So11111111111111111111111111111111111111112",
-      currencyDecimals: 9,
+      currencySymbol: "MHCNF",
+      treasuryMint: "5Kw6JUp9emPRHPnE1VWxvdGiHNpUkEJyuMCgy9Qo1fHQ",
+      currencyDecimals: 3,
       priceDecimals: 3,
       volumeDecimals: 1,
     },

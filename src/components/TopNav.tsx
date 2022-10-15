@@ -19,18 +19,16 @@ const ROUTES = [
   { url: RouteName.home, name: "Marketplace" },
   { url: RouteName.sell, name: "Sell" },
   { url: RouteName.auctionsView, name: "Auctions" },
-  { url: RouteName.drop, name: "Edition Drops" },
+  { url: RouteName.drop, name: "New Drops" },
 ];
 
 const OTHER_LAYOUT_ROUTES = [
   { url: RouteName.customToken, name: "Custom Token Marketplace" },
-  { url: RouteName.multipleCollection, name: "Multi Collection Marketplace" },
-  { url: RouteName.marketplaceWithUrl, name: "Marketplace With URL" },
   {
     url: RouteName.multipleCurrencyMarketplace,
-    name: "Multi Currency Marketplace",
+    name: "MHCNF/SOL Marketplace",
   },
-  { url: RouteName.multipleCurrencySell, name: "Multi Currency Sell" },
+  { url: RouteName.multipleCurrencySell, name: "Sell with MHCNF/SOL" },
   { url: RouteName.activityView, name: "Marketplace Activity" },
 ];
 

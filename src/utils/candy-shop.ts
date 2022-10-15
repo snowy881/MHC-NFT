@@ -16,16 +16,21 @@ const NETWORK = process.env.REACT_APP_SOLANA_NETWORK! as WalletAdapterNetwork;
 const RPC_HOST = process.env.REACT_APP_SOLANA_RPC_HOST!;
 
 const candyShop = new CandyShop({
-  candyShopCreatorAddress: CANDY_SHOP_CREATOR_ADDRESS,
-  treasuryMint: CANDY_SHOP_TREASURY_MINT,
-  candyShopProgramId: CANDY_SHOP_PROGRAM_ID,
-  env: NETWORK,
+  candyShopCreatorAddress: "33aXuSGCCVSkrRBwCfJkw6CwvDNMcSGHrTh18D7R3UpC",
+  treasuryMint: "5Kw6JUp9emPRHPnE1VWxvdGiHNpUkEJyuMCgy9Qo1fHQ",
+  candyShopProgramId: "csbMUULiQfGjT8ezT16EoEBaiarS6VWRevTw1JMydrS",
+  env: "mainnet-beta",
   settings: {
     currencyDecimals: Number(
-      process.env.REACT_APP_SPL_TOKEN_TO_MINT_DECIMALS || 9
+     3
     ),
-    currencySymbol: process.env.REACT_APP_SPL_TOKEN_TO_MINT_NAME || "SOL",
-    mainnetConnectionUrl: RPC_HOST,
+    currencySymbol: "MHCNF",
+    mainnetConnectionUrl: "https://ssc-dao.genesysgo.net/",
+    connectionConfig: {
+    httpHeaders: {
+      '[NODE_SPECIFIC_HEADERS]': '[VALUE]'
+    }
+  }
   },
 });
 
